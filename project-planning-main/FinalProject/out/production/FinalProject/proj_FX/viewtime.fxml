@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj_FX.ViewTimeController">
+   <children>
+      <HBox prefHeight="28.0" prefWidth="566.0" spacing="1.0" style="-fx-border-color: black; -fx-background-color: black; -fx-border-width: 2;">
+         <children>
+            <Button fx:id="btnNavHome" mnemonicParsing="false" onAction="#changeNavHomeButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Home" />
+            <Button fx:id="btnNavAddProject" mnemonicParsing="false" onAction="#changeNavAddProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Add Project" />
+            <Button fx:id="btnNavModProject" mnemonicParsing="false" onAction="#changeNavModProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Modify Project" />
+            <Button fx:id="btnNavAddTime" mnemonicParsing="false" onAction="#changeNavAddTimeButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Add Time" />
+            <Button fx:id="btnNavViewProject" mnemonicParsing="false" onAction="#changeNavViewProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" style="-fx-background-color: #82aff8;" text="View Project" />
+         </children>
+      </HBox>
+       <ComboBox fx:id="projectsCbo" layoutX="80.0" layoutY="44.0" onAction="#projectSelected" prefHeight="31.0" prefWidth="370.0" promptText="Select a Project" />
+       <AnchorPane layoutX="200.0" layoutY="221.0" prefHeight="35.0" prefWidth="164.0" />
+
+      <CheckBox fx:id="chkMember" layoutX="82.0" layoutY="75.0" mnemonicParsing="false" onAction="#projectSelected" prefHeight="27.0" prefWidth="97.0" selected="true" text="Member" />
+      <CheckBox fx:id="chkPhase" layoutX="179.0" layoutY="75.0" mnemonicParsing="false" onAction="#projectSelected" prefHeight="27.0" prefWidth="97.0" selected="false" text="Phase" />
+      <CheckBox fx:id="chkDate" layoutX="262.0" layoutY="75.0" mnemonicParsing="false" onAction="#projectSelected" prefHeight="27.0" prefWidth="97.0" selected="false" text="Date" />
+      <TableView fx:id="tvReqReport" layoutX="23.0" layoutY="319.0" prefHeight="184.0" prefWidth="516.0" visible="flase" />
+      <TableView fx:id="tvRiskReport" layoutX="23.0" layoutY="502.0" prefHeight="165.0" prefWidth="516.0" visible="false" />
+      <TableView fx:id="tvTimeReport" layoutX="23.0" layoutY="121.0" prefHeight="199.0" prefWidth="516.0" visible="false" />
+      <TableView fx:id="tvPhaseTimeReport" layoutX="23.0" layoutY="121.0" prefHeight="199.0" prefWidth="516.0" visible="false" />
+
+   </children>
+</AnchorPane>

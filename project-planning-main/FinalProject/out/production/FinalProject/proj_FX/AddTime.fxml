@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="537.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj_FX.AddTimeController">
+   <children>
+      <HBox prefHeight="28.0" prefWidth="566.0" spacing="1.0" style="-fx-border-color: black; -fx-background-color: black; -fx-border-width: 2;">
+         <children>
+            <Button fx:id="btnNavHome" mnemonicParsing="false" onAction="#changeNavHomeButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Home" />
+            <Button fx:id="btnNavAddProject" mnemonicParsing="false" onAction="#changeNavAddProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Add Project" />
+            <Button fx:id="btnNavModProject" mnemonicParsing="false" onAction="#changeNavModProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Modify Project" />
+            <Button fx:id="btnNavAddTime" mnemonicParsing="false" onAction="#changeNavAddTimeButtonPushed" prefHeight="27.0" prefWidth="138.0" style="-fx-background-color: #82aff8;" text="Add Time" />
+            <Button fx:id="btnNavViewProject" mnemonicParsing="false" onAction="#changeNavViewProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="View Project" />
+         </children>
+      </HBox>
+      <ComboBox fx:id="projectsCbo" layoutX="173.0" layoutY="101.0" onAction="#projectSelected" prefHeight="25.0" prefWidth="220.0" promptText="Select a Project" />
+       <ComboBox fx:id="membersCbo" layoutX="173.0" layoutY="191.0" prefHeight="27.0" prefWidth="220.0" promptText="Select a Member" />
+       <ComboBox fx:id="phasesCbo" layoutX="173.0" layoutY="148.0" prefHeight="27.0" prefWidth="220.0" promptText="Select a Phase" />
+      <AnchorPane layoutX="226.0" layoutY="289.0" prefHeight="32.0" prefWidth="115.0">
+         <children>
+            <Label layoutY="16.0" text="Hours:" />
+            <TextField fx:id="enteredhours" layoutX="50.0" layoutY="12.0" onKeyReleased="#validateHours" prefHeight="25.0" prefWidth="65.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="225.0" layoutY="341.0" mnemonicParsing="false" onAction="#addHours" prefHeight="25.0" prefWidth="117.0" text="Add Hours" />
+      <DatePicker fx:id="enteredDate" layoutX="173.0" layoutY="242.0" prefHeight="27.0" prefWidth="220.0" promptText="Select Date" />
+   </children>
+</AnchorPane>

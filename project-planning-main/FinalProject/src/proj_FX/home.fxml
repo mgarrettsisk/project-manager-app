@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj_FX.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="54.0" layoutY="100.0" prefHeight="345.0" prefWidth="492.0">
+         <children>
+            
+            <Label prefHeight="49.0" prefWidth="250.0" text="Welcome to the project management system!" />
+            <Label prefHeight="34.0" prefWidth="301.0" text="Select from the menu bar options above to get started." />
+         </children></VBox>
+      <HBox prefHeight="28.0" prefWidth="566.0" spacing="1.0" style="-fx-border-color: black; -fx-background-color: black; -fx-border-width: 2;">
+         <children>
+            <Button fx:id="btnNavHome" mnemonicParsing="false" prefHeight="27.0" prefWidth="138.0" style="-fx-background-color: #82aff8;" text="Home" />
+            <Button fx:id="btnNavAddProject" mnemonicParsing="false" onAction="#changeNavAddProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Add Project" />
+            <Button fx:id="btnNavModProject" mnemonicParsing="false" onAction="#changeNavModProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Modify Project" />
+            <Button fx:id="btnNavAddTime" mnemonicParsing="false" onAction="#changeNavAddTimeButtonPushed" prefHeight="27.0" prefWidth="138.0" text="Add Time" />
+            <Button fx:id="btnNavViewProject" mnemonicParsing="false" onAction="#changeNavViewProjectButtonPushed" prefHeight="27.0" prefWidth="138.0" text="View Project" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="grid1" hgap="10" prefHeight="711.0" prefWidth="635.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ComboBox fx:id="projectsCbo" onAction="#projectsAction" prefWidth="150.0" promptText="Projects" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" />
+      <TextField fx:id="projectname" text="project name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="projectdesc" text="project description" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="owner" text="owner" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="addproject" defaultButton="true" mnemonicParsing="false" onMouseClicked="#addProject" text="Add Project" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="70.5" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="151.0" minWidth="80.5" prefWidth="151.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
